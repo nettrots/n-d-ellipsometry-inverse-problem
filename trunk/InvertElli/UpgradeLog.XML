@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="InvertElli">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\InvertElli\InvertElli.sln">
+</Property><Property Name="Date" Value="6 сентября 2009 г.">
+</Property><Property Name="Time" Value="14:09:27">
+</Property></Properties><Event ErrorLevel="0" Project="ComplexMath" Source="..\ComplexMath2\ComplexMath\ComplexMath\ComplexMath.csproj" Description="Project file successfully backed up as C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\InvertElli\Backup\ComplexMath.csproj">
+</Event><Event ErrorLevel="0" Project="ComplexMath" Source="..\ComplexMath2\ComplexMath\ComplexMath\Complex.cs" Description="File successfully backed up as C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\InvertElli\Backup\Complex.cs">
+</Event><Event ErrorLevel="0" Project="ComplexMath" Source="..\ComplexMath2\ComplexMath\ComplexMath\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\InvertElli\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ComplexMath" Source="..\ComplexMath2\ComplexMath\ComplexMath\ComplexMath.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ComplexMath" Source="..\ComplexMath2\ComplexMath\ComplexMath\ComplexMath.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ComplexMath" Source="..\ComplexMath2\ComplexMath\ComplexMath\ComplexMath.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

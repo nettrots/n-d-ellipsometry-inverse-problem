@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15D22A9A-0135-44F2-A8B2-A6A86659E13C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InvertEllipsometryClass</RootNamespace>
+    <AssemblyName>InvertEllipsometryClass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Experiment.cs" />
+    <Compile Include="FilmsModel.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Functional.cs" />
+    <Compile Include="Optimisation_Algorithms\LBFGS\lbfgsb.cs" />
+    <Compile Include="Optimisation_Algorithms\LBFGS\LBFGS_FMW.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\ap.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\blas.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\cholesky.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\lbfgs.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\LevenbergMarquardtFMW.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\minlm.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\spdsolve.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\testlm.cs" />
+    <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\trinverse.cs" />
+    <Compile Include="Material.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Method.cs" />
+    <Compile Include="Optimisation_Algorithms\OptimisationAlgorythm_FMW.cs" />
+    <Compile Include="Optimisation_Algorithms\PrincipalAxis\principalaxis.cs" />
+    <Compile Include="Optimisation_Algorithms\SimpleSearch\SimpleSearchFMW.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ComplexMath2\ComplexMath\ComplexMath\ComplexMath.csproj">
+      <Project>{9CC21139-C829-4B3A-9435-13EE41C90075}</Project>
+      <Name>ComplexMath</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

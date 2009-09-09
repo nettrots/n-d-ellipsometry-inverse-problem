@@ -1,0 +1,6 @@
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\bin\Release\ComplexMath.XML
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\bin\Release\ComplexMath.dll
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\bin\Release\ComplexMath.pdb
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\obj\Release\ComplexMath.dll
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\obj\Release\ComplexMath.pdb

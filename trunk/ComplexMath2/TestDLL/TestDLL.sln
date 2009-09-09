@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDLL", "TestDLL\TestDLL.csproj", "{CDDBBC83-05C5-4256-B5B0-1BEA0DDAC46B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDDBBC83-05C5-4256-B5B0-1BEA0DDAC46B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDBBC83-05C5-4256-B5B0-1BEA0DDAC46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDBBC83-05C5-4256-B5B0-1BEA0DDAC46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDBBC83-05C5-4256-B5B0-1BEA0DDAC46B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

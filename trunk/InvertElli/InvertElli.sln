@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvertElli", "InvertElli\InvertElli.csproj", "{9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9CC21139-C829-4B3A-9435-13EE41C90075} = {9CC21139-C829-4B3A-9435-13EE41C90075}
+		{15D22A9A-0135-44F2-A8B2-A6A86659E13C} = {15D22A9A-0135-44F2-A8B2-A6A86659E13C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvertEllipsometryClass", "InvertEllipsometryClass\InvertEllipsometryClass.csproj", "{15D22A9A-0135-44F2-A8B2-A6A86659E13C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9CC21139-C829-4B3A-9435-13EE41C90075} = {9CC21139-C829-4B3A-9435-13EE41C90075}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexMath", "..\ComplexMath2\ComplexMath\ComplexMath\ComplexMath.csproj", "{9CC21139-C829-4B3A-9435-13EE41C90075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15D22A9A-0135-44F2-A8B2-A6A86659E13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D22A9A-0135-44F2-A8B2-A6A86659E13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D22A9A-0135-44F2-A8B2-A6A86659E13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D22A9A-0135-44F2-A8B2-A6A86659E13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC21139-C829-4B3A-9435-13EE41C90075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC21139-C829-4B3A-9435-13EE41C90075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC21139-C829-4B3A-9435-13EE41C90075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC21139-C829-4B3A-9435-13EE41C90075}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
