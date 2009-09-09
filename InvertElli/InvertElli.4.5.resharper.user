@@ -1,0 +1,317 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:MinimizationAlg/f:spdsolve.cs" caret="592" fromTop="0" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:MinimizationAlg/f:lbfgs.cs" caret="26138" fromTop="575" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:MinimizationAlg/f:LevenbergMarquardtAlg.cs" caret="80" fromTop="4" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:MinimizationAlg/f:ap.cs" caret="2629" fromTop="76" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Program.cs" caret="308" fromTop="13" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:PrincipalAxis/f:principalaxis.cs" caret="0" fromTop="0" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:LBFGS/f:lbfgsb.cs" caret="0" fromTop="0" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:MinimizationAlg/f:testlm.cs" caret="1510" fromTop="0" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/d:MinimizationAlg/f:minlm.cs" caret="4701" fromTop="4" />
+      <File id="9CC21139-C829-4B3A-9435-13EE41C90075/f:Complex.cs" caret="8474" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Vector.cs" caret="2670" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Matrix.cs" caret="3405" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="5108" fromTop="18" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="3388" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="4339" fromTop="3" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="757" fromTop="11" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="3752" fromTop="15" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="5797" fromTop="24" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="2836" fromTop="12" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="1850" fromTop="5" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="3319" fromTop="10" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="609" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="8305" fromTop="8" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="2142" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="1540" fromTop="13" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="1347" fromTop="12" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="2039" fromTop="8" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="6536" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="8346" fromTop="4" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="8346" fromTop="2" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="2314" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="8564" fromTop="8" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="5809" fromTop="36" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="2682" fromTop="15" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="2479" fromTop="11" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="8990" fromTop="7" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="11577" fromTop="5" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="11347" fromTop="10" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="10817" fromTop="12" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="10588" fromTop="8" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="6006" fromTop="40" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="2475" fromTop="9" />
+      <File id="15D22A9A-0135-44F2-A8B2-A6A86659E13C/f:Classes.cs" caret="5108" fromTop="18" />
+      <File id="9BF3BC1F-A7AC-45D1-ADCF-86BF7D131CF6/f:Form1.cs" caret="2053" fromTop="14" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerMSTest>
+    <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
+  </UnitTestRunnerMSTest>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="double" priority="43" />
+      <Item value="using" priority="1" />
+      <Item value="Material" priority="6" />
+      <Item value="protected" priority="1" />
+      <Item value="public" priority="14" />
+      <Item value="class" priority="2" />
+      <Item value="private" priority="12" />
+      <Item value="Complex" priority="80" />
+      <Item value="if" priority="11" />
+      <Item value="rho" priority="1" />
+      <Item value="null" priority="0" />
+      <Item value="new" priority="65" />
+      <Item value="delta" priority="2" />
+      <Item value="Experiment" priority="2" />
+      <Item value="this" priority="8" />
+      <Item value="psi" priority="0" />
+      <Item value="incidentAngle" priority="0" />
+      <Item value="calcPho" priority="0" />
+      <Item value="return" priority="10" />
+      <Item value="n" priority="8" />
+      <Item value="incN" priority="3" />
+      <Item value="Math" priority="7" />
+      <Item value="incAngle" priority="2" />
+      <Item value="d" priority="5" />
+      <Item value="int" priority="10" />
+      <Item value="ArrayList&lt;Material&gt;" priority="0" />
+      <Item value="Matrix" priority="10" />
+      <Item value="i" priority="11" />
+      <Item value="beta" priority="2" />
+      <Item value="NewsStyleUriParser" priority="0" />
+      <Item value="foreach" priority="4" />
+      <Item value="list" priority="1" />
+      <Item value="is" priority="1" />
+      <Item value="Ambient" priority="4" />
+      <Item value="scaterringMatrix" priority="5" />
+      <Item value="as" priority="1" />
+      <Item value="for" priority="0" />
+      <Item value="stack" priority="18" />
+      <Item value="Film" priority="3" />
+      <Item value="temp" priority="2" />
+      <Item value="material" priority="1" />
+      <Item value="material_2" priority="1" />
+      <Item value="incedentAngle" priority="4" />
+      <Item value="t1" priority="0" />
+      <Item value="t2" priority="0" />
+      <Item value="lMatricies" priority="0" />
+      <Item value="interfaceMatrixPs" priority="0" />
+      <Item value="interfaceMatrixP" priority="0" />
+      <Item value="curr" priority="1" />
+      <Item value="scaterringMatrixP" priority="0" />
+      <Item value="bool" priority="2" />
+      <Item value="false" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="Substract" priority="4" />
+      <Item value="calcMatrix" priority="0" />
+      <Item value="scaterringMatrixS" priority="0" />
+      <Item value="FilmsModel" priority="2" />
+      <Item value="expData" priority="2" />
+      <Item value="calsData" priority="2" />
+      <Item value="FunctionXY" priority="0" />
+      <Item value="List&lt;Material&gt;" priority="0" />
+      <Item value="amb" priority="0" />
+      <Item value="N" priority="4" />
+      <Item value="Length" priority="0" />
+      <Item value="Functional" priority="1" />
+      <Item value="ComplexMath" priority="0" />
+      <Item value="textBox1" priority="2" />
+      <Item value="func" priority="2" />
+      <Item value="getBeta" priority="0" />
+      <Item value="lambda" priority="1" />
+      <Item value="minlm" priority="0" />
+      <Item value="minimisator" priority="0" />
+      <Item value="ref" priority="2" />
+      <Item value="lmstate" priority="0" />
+      <Item value="aprx" priority="8" />
+      <Item value="HelpNavigator" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="g" priority="1" />
+      <Item value="t" priority="2" />
+      <Item value="x1" priority="0" />
+      <Item value="c" priority="0" />
+      <Item value="state" priority="1" />
+      <Item value="List" priority="1" />
+      <Item value="Dictionary" priority="1" />
+      <Item value="Array" priority="2" />
+      <Item value="Dictionary&lt;double,Array&gt;" priority="0" />
+      <Item value="res" priority="3" />
+      <Item value="void" priority="4" />
+      <Item value="ThreadStaticAttribute" priority="0" />
+      <Item value="Thread" priority="1" />
+      <Item value="tr" priority="0" />
+      <Item value="string" priority="5" />
+      <Item value="ans" priority="1" />
+      <Item value="IComparer" priority="0" />
+      <Item value="x" priority="7" />
+      <Item value="ArrComparer" priority="0" />
+      <Item value="Delegate" priority="3" />
+      <Item value="Invoke" priority="0" />
+      <Item value="SampleDelegate" priority="1" />
+      <Item value="make" priority="1" />
+      <Item value="sd" priority="1" />
+      <Item value="AsyncCallback" priority="0" />
+      <Item value="object" priority="0" />
+      <Item value="Random" priority="1" />
+      <Item value="r" priority="0" />
+      <Item value="static" priority="0" />
+      <Item value="funcgradD" priority="0" />
+      <Item value="lbfgs" priority="3" />
+      <Item value="alg" priority="0" />
+      <Item value="lbfgsstate" priority="0" />
+      <Item value="lbfgsb" priority="1" />
+      <Item value="f" priority="0" />
+      <Item value="currF" priority="1" />
+      <Item value="l" priority="0" />
+      <Item value="u" priority="0" />
+      <Item value="info" priority="0" />
+      <Item value="perebor" priority="0" />
+      <Item value="delegate" priority="0" />
+      <Item value="ff" priority="0" />
+      <Item value="principleAxis" priority="0" />
+      <Item value="principalaxis" priority="0" />
+      <Item value="hN" priority="1" />
+      <Item value="Func" priority="0" />
+      <Item value="ci" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ComplexMath.Complex">
+      <Item value="Equals" priority="0" />
+      <Item value="Modulus" priority="8" />
+      <Item value="Norm" priority="0" />
+      <Item value="real" priority="1" />
+      <Item value="imag" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ComplexMath.Complex">
+      <Item value="Tan" priority="0" />
+      <Item value="Exp" priority="1" />
+      <Item value="Cos" priority="0" />
+      <Item value="Sqrt" priority="1" />
+      <Item value="Pow" priority="0" />
+      <Item value="Sin" priority="1" />
+      <Item value="Log" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InvertEllipsometryClass.Experiment">
+      <Item value="psi" priority="0" />
+      <Item value="delta" priority="0" />
+      <Item value="incidentAngle" priority="0" />
+      <Item value="Rho" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="PI" priority="1" />
+      <Item value="Sin" priority="1" />
+      <Item value="Pow" priority="0" />
+      <Item value="Atan" priority="1" />
+      <Item value="Tan" priority="0" />
+      <Item value="Asin" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InvertEllipsometryClass.Material">
+      <Item value="L" priority="1" />
+      <Item value="N" priority="6" />
+      <Item value="D" priority="2" />
+      <Item value="n" priority="0" />
+      <Item value="incAngle" priority="0" />
+      <Item value="number" priority="0" />
+      <Item value="calcL" priority="0" />
+      <Item value="d" priority="0" />
+      <Item value="Angle" priority="2" />
+      <Item value="angle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Contains" priority="1" />
+      <Item value="Count" priority="2" />
+      <Item value="Add" priority="6" />
+      <Item value="Sort" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InvertEllipsometryClass.Film">
+      <Item value="Recalc" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InvertEllipsometryClass.FilmsModel">
+      <Item value="PhoExp" priority="0" />
+      <Item value="changeParams" priority="0" />
+      <Item value="lambda" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InvertEllipsometryClass.Ambient">
+      <Item value="N" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InvertEllipsometryClass.Functional">
+      <Item value="functional" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString" priority="2" />
+      <Item value="CompareTo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@alglib.minlm">
+      <Item value="minlmfj" priority="0" />
+      <Item value="minlmiteration" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:alglib.minlm+lmreport">
+      <Item value="terminationtype" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add" priority="0" />
+      <Item value="Keys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2+KeyCollection">
+      <Item value="ToArray" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Array">
+      <Item value="Sort" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Array">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="Start" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="CurrentThread" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:InvertElli.Form1+SampleDelegate">
+      <Item value="Invoke" priority="0" />
+      <Item value="BeginInvoke" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Random">
+      <Item value="Next" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@alglib.lbfgs">
+      <Item value="minlbfgs" priority="0" />
+      <Item value="lbfgsstate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@alglib.lbfgsb">
+      <Item value="funcgrad" priority="0" />
+      <Item value="lbfgsbminimize" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@alglib.principalaxis">
+      <Item value="principalaxisminimize" priority="0" />
+      <Item value="fx" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:alglib.minlm+lmstate">
+      <Item value="h" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

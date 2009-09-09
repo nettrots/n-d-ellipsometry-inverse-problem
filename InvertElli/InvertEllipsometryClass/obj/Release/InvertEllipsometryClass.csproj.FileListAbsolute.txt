@@ -1,0 +1,8 @@
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\bin\Release\InvertEllipsometryClass.dll
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\bin\Release\InvertEllipsometryClass.pdb
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\bin\Release\ComplexMath.dll
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\bin\Release\ComplexMath.pdb
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\bin\Release\ComplexMath.xml
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\obj\Release\InvertEllipsometryClass.dll
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\obj\Release\InvertEllipsometryClass.pdb

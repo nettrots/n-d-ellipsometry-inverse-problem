@@ -1,0 +1,13 @@
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\bin\Release\InvertElli.exe
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\bin\Release\InvertElli.pdb
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\bin\Release\ComplexMath.dll
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\bin\Release\InvertEllipsometryClass.dll
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\bin\Release\InvertEllipsometryClass.pdb
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\bin\Release\ComplexMath.pdb
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\bin\Release\ComplexMath.xml
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Release\InvertElli.Form1.resources
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Release\InvertElli.Properties.Resources.resources
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Release\InvertElli.csproj.GenerateResource.Cache
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Release\InvertElli.exe
+C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Release\InvertElli.pdb
