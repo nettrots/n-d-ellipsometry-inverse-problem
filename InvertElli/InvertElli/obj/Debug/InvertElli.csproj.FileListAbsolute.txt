@@ -24,3 +24,5 @@ C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\Invert
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Debug\InvertElli.Form1.resources
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Debug\InvertElli.Properties.Resources.resources
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Debug\InvertElli.csproj.GenerateResource.Cache
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.exe
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.pdb
