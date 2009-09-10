@@ -23,26 +23,28 @@ namespace InvertElli
             InitializeComponent();
         }
 
-
+        #region Methods
         private string perebor()
         {
          
-            double nmin = 1.333, nmax = 1.7,
-                   dmin = 80,
-                   dmax = 100
+            double nmin = 1.40, nmax = 1.43,
+                   dmin = 260,
+                   dmax = 340
                    ,
-                   dn = 0.01,
+                   dn = 0.0005,
                    dd = 0.5;
+            double psi=0, delta=0;
             List<double[]> res = new List<double[]>();
             for (double n = nmin; n < nmax; n += dn)
                 for (double d = dmin; d < dmax; d += dd)
-                    res.Add( new double[] {func.functional(n, d),n, d});
+                    res.Add(new double[] { func.functional(n, d, ref psi, ref delta), n, d, delta, psi });
             res.Sort(new ArrComparer());
             string ans = "";
             foreach (var xx in res)
             {
                 //ans += "f = " + xx[0] + " n,d = " + xx[1] + "," + xx[2] + "\r\n";
-                ans += xx[1] + "\t" + xx[2] + "\t"+xx[0] + "\r\n";
+                //ans += xx[1] + "\t" + xx[2] + "\t"+xx[0] + "\r\n";
+                ans += xx[1] + "\t" + xx[2] + "\t" + xx[0] + "\t" + xx[3] + "\t" + xx[4]+ "\r\n";
 
             }
             textBox1.Text += "n\td\tf\t\r\n";
@@ -64,8 +66,8 @@ namespace InvertElli
         {
             return new ArrComparer();
         }
+        
         delegate string SampleDelegate();
-
         private void LevebAlg()
         {
 
@@ -111,8 +113,6 @@ namespace InvertElli
               (currF.functional(x[1], x[2]+0.001)-currF.functional(x[1], x[2]-0.001))/0.002,
         };
         }
-
-        private Functional currF;
         private void LBFGSalg()
         {
              currF = func;
@@ -141,28 +141,15 @@ namespace InvertElli
          textBox1.Text += "n = " + aprx[1].ToString() + "\td =  " + aprx[2].ToString() + "\tf  = " + func.functional(aprx[1], aprx[2]) + "\r\n";
 
      }
-     static ComplexMath.Complex[] N = new ComplexMath.Complex[] { new Complex(1, 0), new Complex(1.59, 0), new Complex(1.5, 0), new Complex(1.4598, 0), new Complex(3.8858, -0.02), };
-     Functional func = new Functional(23.6688315 * Math.PI / 180, 164.1178038 * Math.PI / 180, Math.PI / 3, N, new double[] { 1.3, 30, 15 }, 6328);
-        
+        #endregion
+
+     private Functional currF;
+     static ComplexMath.Complex[] N = new ComplexMath.Complex[] { new Complex(1.333, 0), new Complex(1.59, 0), new Complex(1.5, 0), new Complex(1.4598, 0), new Complex(3.8858, -0.02), };
+     Functional func = new Functional(17.472 * Math.PI / 180, 165.747 * Math.PI / 180, Math.PI / 3, N, new double[] { 1.3, 30, 15 }, 6328);
+     //23.6688315 164.1178038
         private void button1_Click(object sender, EventArgs e)
         {
-       /*     FilmsModel calsData;
-            calsData = new FilmsModel(N, new double[] { 95, 30, 15 }, Math.PI / 3, 6328);
-            
-
-            Experiment expData;
-            //164.1225614, 23.6909338   ||| 23.643, 164.159
-
-
-            expData = new Experiment(23.6909338 * Math.PI / 180, 164.1225614 * Math.PI / 180, Math.PI / 3);
-           
-            Complex x1 = expData.Rho;
-            Complex x2 = calsData.PhoExp();
-            double t = Math.Atan(x1.Modulus);
-            double t1 = Math.Atan(x2.Modulus);
-            double c = (Complex.Log(x1 / x1.Modulus)).Argument;
-            double c1 = (Complex.Log(x2 / x2.Modulus)).Argument;*/
-            textBox1.Text += "principleAxis\r\n";
+              textBox1.Text += "principleAxis\r\n";
             principleAxis();
             
             textBox1.Text += "LevebAlg\r\n";
@@ -171,16 +158,9 @@ namespace InvertElli
             LBFGSalg();
             textBox1.Text += "Simple Search";
             perebor();
-          //  testlm.testlm_test();
-            //SampleDelegate sd=new SampleDelegate(make);
-            //textBox1.Text = sd.Invoke();
-
+  
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
