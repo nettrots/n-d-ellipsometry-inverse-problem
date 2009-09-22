@@ -10,3 +10,9 @@ C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\Comple
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\obj\Debug\ComplexMath.dll
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\ComplexMath2\ComplexMath\ComplexMath\obj\Debug\ComplexMath.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\ComplexMath2\ComplexMath\ComplexMath\bin\Debug\ComplexMath.XML
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\ComplexMath2\ComplexMath\ComplexMath\bin\Debug\ComplexMath.dll
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\ComplexMath2\ComplexMath\ComplexMath\bin\Debug\ComplexMath.pdb
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\ComplexMath2\ComplexMath\ComplexMath\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\ComplexMath2\ComplexMath\ComplexMath\obj\Debug\ComplexMath.dll
+C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\ComplexMath2\ComplexMath\ComplexMath\obj\Debug\ComplexMath.pdb
