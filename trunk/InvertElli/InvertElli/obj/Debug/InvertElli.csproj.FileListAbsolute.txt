@@ -26,7 +26,14 @@ C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\Invert
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertElli\obj\Debug\InvertElli.csproj.GenerateResource.Cache
 C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.exe
 C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.pdb
-C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.Form1.resources
-C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.Properties.Resources.resources
-C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.csproj.GenerateResource.Cache
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\bin\Debug\InvertElli.exe
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\bin\Debug\InvertElli.pdb
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\bin\Debug\ComplexMath.dll
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\bin\Debug\InvertEllipsometryClass.dll
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\bin\Debug\InvertEllipsometryClass.pdb
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\bin\Debug\ComplexMath.pdb
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\bin\Debug\ComplexMath.xml
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\ResolveAssemblyReference.cache
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.Form1.resources
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.Properties.Resources.resources
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertElli\obj\Debug\InvertElli.csproj.GenerateResource.Cache

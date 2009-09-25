@@ -14,5 +14,11 @@ C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\Invert
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\obj\Debug\InvertEllipsometryClass.dll
 C:\Documents and Settings\Alex T\My Documents\Visual Studio 2008\Projects\InvertElli\InvertEllipsometryClass\obj\Debug\InvertEllipsometryClass.pdb
-C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Admin\Мои документы\Visual Studio 2008\Projects\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\obj\Debug\InvertEllipsometryClass.pdb
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\bin\Debug\InvertEllipsometryClass.dll
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\bin\Debug\InvertEllipsometryClass.pdb
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\bin\Debug\ComplexMath.dll
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\bin\Debug\ComplexMath.pdb
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\bin\Debug\ComplexMath.xml
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\obj\Debug\InvertEllipsometryClass.dll
+C:\Trotsenko\tools\c#\Ellipsometry_invert\n-d-ellipsometry-inverse-problem\InvertElli\InvertEllipsometryClass\obj\Debug\InvertEllipsometryClass.pdb

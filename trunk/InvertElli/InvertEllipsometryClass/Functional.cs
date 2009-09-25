@@ -31,7 +31,7 @@ namespace InvertEllipsometryClass
             delta = c1 * 180 / Math.PI;
             double k =  (t - t1) * (t - t1), k1 = (c - c1) * (c - c1);
             return
-                k + k1;
+              Math.Log(k + k1);
         }
         public double functional(double n, double d)
         {
@@ -46,7 +46,7 @@ namespace InvertEllipsometryClass
            
             double k = (t - t1) * (t - t1), k1 = (c - c1) * (c - c1);
             return
-                k + k1;
+             Math.Log(k + k1);
         }
         public double functional(double n, double d, int psi, int delta)
         {
