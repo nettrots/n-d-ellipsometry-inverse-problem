@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.delta_tb = new System.Windows.Forms.TextBox();
             this.psi_tb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,6 +74,9 @@
             this.amb_k = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.aoi = new System.Windows.Forms.TextBox();
+            this.ChartViewer = new ChartDirector.WinChartViewer();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ChartViewer)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -86,17 +88,6 @@
             this.button1.Text = "run";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.Location = new System.Drawing.Point(1, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(410, 336);
-            this.textBox1.TabIndex = 1;
             // 
             // delta_tb
             // 
@@ -192,7 +183,7 @@
             this.dstep_b.Name = "dstep_b";
             this.dstep_b.Size = new System.Drawing.Size(44, 20);
             this.dstep_b.TabIndex = 16;
-            this.dstep_b.Text = "0.5";
+            this.dstep_b.Text = "100";
             // 
             // nstep_b
             // 
@@ -200,7 +191,7 @@
             this.nstep_b.Name = "nstep_b";
             this.nstep_b.Size = new System.Drawing.Size(44, 20);
             this.nstep_b.TabIndex = 15;
-            this.nstep_b.Text = "0.05";
+            this.nstep_b.Text = "100";
             // 
             // nmin_b
             // 
@@ -256,7 +247,6 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(677, 224);
             this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(44, 20);
             this.textBox2.TabIndex = 26;
             this.textBox2.Text = "x";
@@ -268,7 +258,6 @@
             this.amb_n.Size = new System.Drawing.Size(44, 20);
             this.amb_n.TabIndex = 25;
             this.amb_n.Text = "1.333";
-            this.amb_n.TextChanged += new System.EventHandler(this.anb_n_TextChanged);
             // 
             // label11
             // 
@@ -307,7 +296,6 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(773, 303);
             this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(44, 20);
             this.textBox7.TabIndex = 35;
             this.textBox7.Text = "x";
@@ -332,7 +320,6 @@
             // 
             this.textBox10.Location = new System.Drawing.Point(773, 224);
             this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(44, 20);
             this.textBox10.TabIndex = 32;
             this.textBox10.Text = "x";
@@ -341,7 +328,6 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(773, 199);
             this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(44, 20);
             this.textBox11.TabIndex = 31;
             this.textBox11.Text = "x";
@@ -441,7 +427,6 @@
             this.l1_k.Size = new System.Drawing.Size(44, 20);
             this.l1_k.TabIndex = 48;
             this.l1_k.Text = "0";
-            this.l1_k.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // l2_k
             // 
@@ -455,7 +440,6 @@
             // 
             this.textBox15.Location = new System.Drawing.Point(723, 224);
             this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(44, 20);
             this.textBox15.TabIndex = 46;
             this.textBox15.Text = "x";
@@ -485,11 +469,28 @@
             this.aoi.TabIndex = 51;
             this.aoi.Text = "60";
             // 
+            // ChartViewer
+            // 
+            this.ChartViewer.Location = new System.Drawing.Point(12, 12);
+            this.ChartViewer.Name = "ChartViewer";
+            this.ChartViewer.Size = new System.Drawing.Size(398, 354);
+            this.ChartViewer.TabIndex = 53;
+            this.ChartViewer.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(452, 77);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(365, 20);
+            this.textBox1.TabIndex = 54;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 378);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ChartViewer);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.aoi);
             this.Controls.Add(this.label20);
@@ -535,10 +536,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.psi_tb);
             this.Controls.Add(this.delta_tb);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Ellipsometry";
+            ((System.ComponentModel.ISupportInitialize)(this.ChartViewer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -547,7 +548,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox delta_tb;
         private System.Windows.Forms.TextBox psi_tb;
         private System.Windows.Forms.Label label1;
@@ -593,6 +593,8 @@
         private System.Windows.Forms.TextBox amb_k;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox aoi;
+        private ChartDirector.WinChartViewer ChartViewer;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
