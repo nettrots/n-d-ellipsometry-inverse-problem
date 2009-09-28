@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using alglib;
 using AP;
+using ChartDirector;
 using InvertEllipsometryClass;
 using Complex = ComplexMath.Complex;
 using Math=System.Math;
@@ -20,52 +22,82 @@ namespace InvertElli
     {
         public Form1()
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
             InitializeComponent();
         }
 
-        #region Methods
+        List<double[]> res;
+        double[] dataX;
+        double[] dataY;
+        double[] dataZ;
+        delegate void chartdel(WinChartViewer viewer, string img);
+
+        private double dn;
+        private double dd;
+        private double min = 0;
+        private double max = 0;
         private void perebor()
         {
             vf1 vfcl = new vf1(wcl);
             vf1 vf = new vf1(wr);
             vf1 vf23 = new vf1(sign);
-            double nmin = Convert.ToDouble(nmin_b.Text),
-                   nmax = Convert.ToDouble(nmax_b.Text),
-                   dmin = Convert.ToDouble(dmin_b.Text),
-                   dmax = Convert.ToDouble(dmax_b.Text)
-                   ,
-                   dn = Convert.ToDouble(nstep_b.Text),
-                   dd = Convert.ToDouble(dstep_b.Text);
+          
+
             double psi=0, delta=0;
-            List<double[]> res = new List<double[]>();
-            double num = (nmax - nmin) / (dn) * (dmax - dmin) / (dd);
+            res = new List<double[]>();
+
+            int num = (int)((dn) * (dd));
+            
             int i=0;
             double per=0;
-            for (double n = nmin; n <= nmax; n += dn)
-                for (double d = dmin; d <= dmax; d += dd)
+            for (double n = nmin; n < nmax; n += (nmax-nmin)/(dn))
+                for (double d = dmin; d < dmax; d += (dmax-dmin)/(dd))
                 {
-                    res.Add(new double[] { func.functional(n, d, ref psi, ref delta), n, d, delta, psi });
-                    textBox1.BeginInvoke(vfcl, new object[] { "" });
-                    per=i++/num*100;
-                    textBox1.BeginInvoke(vf, new object[] { (per).ToString()+"%"});
+                    double f = func.functional(n, d, ref psi, ref delta);
+
+                   
+                    res.Add(new[] {f, n, d, delta, psi});
+                    per = i++*1.0/num*100;
+                    double tempd;
+                    if ((int)(tempd = Math.Round(per)) % 2 == 0)
+                    {
+                        textBox1.BeginInvoke(vfcl, new object[] { "" });
+
+                        textBox1.BeginInvoke(vf, new object[] {(tempd).ToString() + "%"});
+                    }
+
+
                 }
 
             res.Sort(new ArrComparer());
+            min = res[0][0];
+            max = res[res.Count-1][0];
             string ans = "";
             
             textBox1.BeginInvoke(vfcl, new object[] { ""});
-            
-            
+
+            dataX = new double[i];
+            dataY = new double[i];
+            dataZ = new double[i];
+        
+            i = 0;
             foreach (var xx in res)
             {
+                dataX[i] = xx[1];
+                dataY[i] = xx[2];
+                dataZ[i] = xx[0];
+                i++;
                 //ans += "f = " + xx[0] + " n,d = " + xx[1] + "," + xx[2] + "\r\n";
                 //ans += xx[1] + "\t" + xx[2] + "\t"+xx[0] + "\r\n";
-                textBox1.BeginInvoke(vf, new object[] { xx[1] + "\t" + xx[2] + "\t" + xx[0] + "\t" + xx[3] + "\t" + xx[4] + "\r\n" });
+            //    textBox1.BeginInvoke(vf, new object[] { xx[1] + "\t" + xx[2] + "\t" + xx[0] + "\t" + xx[3] + "\t" + xx[4] + "\r\n" });
                 
                 //ans += xx[1] + "\t" + xx[2] + "\t" + xx[0] + "\t" + xx[3] + "\t" + xx[4]+ "\r\n";
 
             }
             textBox1.BeginInvoke(vf23, new object[] { "" });
+            ChartViewer.BeginInvoke(new chartdel(createChart), new object[] { ChartViewer, "" });
+            textBox1.BeginInvoke(vf, new object[] { res[0][1] + "\t" + res[0][2] + "\t" + res[0][0] + "\t" + res[0][3] + "\t" + res[0][4] + "\r\n" });
+
             //textBox1.Text += "n\td\tf\t\r\n";
             //textBox1.Text += ans;
             //Clipboard.SetText(textBox1.Text);
@@ -99,86 +131,16 @@ namespace InvertElli
         {
             return new ArrComparer();
         }
-        
-        delegate string SampleDelegate();
-        private void LevebAlg()
-        {
-
-            double[] aprx = new double[] { 1.4, 90 };
-            minlm.lmstate state = new minlm.lmstate();
-            minlm.lmreport rep = new minlm.lmreport();
-            //state.
-            double hN = 0.1;
-            double hD = 0.1;
-
-            minlm.minlmfgh(2,  ref aprx, 0.0, 0.0, 100, ref state);
-
-            bool referror;
-            while (minlm.minlmiteration(ref state))
-            {
-                state.f = func.functional(aprx[0], aprx[1]);
-                state.g[0] = (func.functional(aprx[0] + hN, aprx[1]) - func.functional(aprx[0] - hN, aprx[1])) /
-                                  (2 * hN);
-                state.g[1] =  (func.functional(aprx[0], aprx[1] + hD) - func.functional(aprx[0], aprx[1] - hD)) /
-                                 (2 * hD);
-                state.h[0, 0] = (func.functional(aprx[0] + hN, aprx[1]) - func.functional(aprx[0], aprx[1]) + func.functional(aprx[0] - hN, aprx[1])) /
-                                  (hN * hN);
-                state.h[1, 1] = (func.functional(aprx[0], aprx[1] + hD) - func.functional(aprx[0], aprx[1]) + func.functional(aprx[0] , aprx[1] - hD)) /
-                                  (hD * hD);
-                state.h[1, 0] = state.h[0, 1] = (func.functional(aprx[0] + hN, aprx[1] + hD) - func.functional(aprx[0] - hN, aprx[1] + hN) - func.functional(aprx[0] + hN, aprx[1] - hD) + func.functional(aprx[0] - hN, aprx[1] - hD)) /
-                                                  (4*hN * hD);
-                minlm.minlmresults(ref state, ref aprx, ref rep);
-
-               
-            }
-            //minlm.minlmresults(ref state, ref aprx, ref rep);
-            textBox1.Text += "n = " + (aprx[0]).ToString() + "\td = " + (aprx[1]).ToString() + "\tf= " + func.functional(aprx[0], aprx[1]) + " \r\n";
-            //textBox1.Text += "terminationtype: " + rep.terminationtype.ToString() + "\r\n";
-
-        }
-
-        void gradfunc(ref double[] x,ref double f,ref double[] g)
-        {
-            f=currF.functional(x[1], x[2]);
-            g=new double[]
-                  {0,
-              (currF.functional(x[1]+0.001, x[2])-currF.functional(x[1]-0.001, x[2]))/0.002,       
-              (currF.functional(x[1], x[2]+0.001)-currF.functional(x[1], x[2]-0.001))/0.002,
-        };
-        }
-        private void LBFGSalg()
-        {
-             currF = func;
-            double[] aprx = new double[] {0, 1.5, 100 };
-            lbfgs.lbfgsstate state=new lbfgs.lbfgsstate();
-            lbfgsb.funcgrad = gradfunc;
-            int[] nb=new int[]{0,2,2};
-            double [] l=new double[]{0,1.3,0};
-            double [] u=new double[]{0,1.7,100};
-            int info=0;
-            lbfgsb.lbfgsbminimize(2, 2, ref aprx, 0.00000000001, 0.00000000001, 0.00000000001, 10000, ref nb, ref l, ref u, ref info);
-            textBox1.Text += "n = " + aprx[1].ToString() + "\td =  " + aprx[2].ToString() + "\tf = " + func.functional(aprx[1],aprx[2])+"\r\n";
-            //lbfgs.minlbfgs(2,2,aprx,0.0000001,0.0000001,0.0000000001,100,0,state);
-        }
-
-        double f(double[] x)
-        {
-            return currF.functional(x[1],x[2]);
-        }
-     private void principleAxis()
-     {
-         currF = func;
-         double[] aprx = new double[] {0, 1, 10 };
-         principalaxis.f = f;
-         principalaxis.principalaxisminimize(2,ref aprx, 0.00000000001, 0.01);
-         textBox1.Text += "n = " + aprx[1].ToString() + "\td =  " + aprx[2].ToString() + "\tf  = " + func.functional(aprx[1], aprx[2]) + "\r\n";
-
-     }
-        #endregion
+  
 
      private Functional currF;
      Functional func;
-     delegate void vf();
+        private double nmin;
+        private double nmax;
+        private double dmin;
+        private double dmax;
+
+        delegate void vf();
      delegate void vf1(string s);
      //23.6688315 164.1178038
         private void button1_Click(object sender, EventArgs e)
@@ -201,6 +163,13 @@ namespace InvertElli
                     Convert.ToDouble(l1_d.Text) }
                 , 6328);
             done_l.Text = "-";
+            nmin = Convert.ToDouble(nmin_b.Text);
+            nmax = Convert.ToDouble(nmax_b.Text);
+            dmin = Convert.ToDouble(dmin_b.Text);
+            dmax = Convert.ToDouble(dmax_b.Text);
+
+            dn = Convert.ToDouble(nstep_b.Text);
+            dd = Convert.ToDouble(dstep_b.Text);
            /*   textBox1.Text += "principleAxis\r\n";
             principleAxis();
             
@@ -211,18 +180,49 @@ namespace InvertElli
             textBox1.Text += "Simple Search";*/
             vf vf = new vf(perebor);
             vf.BeginInvoke(null, null);
+
             
         }
 
-        private void textBox13_TextChanged(object sender, EventArgs e)
+        private XYChart chart;
+        //Main code for creating chart.
+        //Note: the argument img is unused because this demo only has 1 chart.
+        public void createChart(WinChartViewer viewer, string img)
         {
+            chart = new XYChart(viewer.Width, viewer.Height, 0xffffff, 0x888888);
+            chart.setSize(viewer.Width, viewer.Height);
+            chart.setRoundedFrame();
 
+
+            chart.setPlotArea(30, 30, viewer.Width-60 , viewer.Height -60, 0);
+
+            ContourLayer layer = chart.addContourLayer(dataX, dataY, dataZ);
+            chart.setClipping();
+            chart.xAxis().setTickDensity(10);
+            chart.yAxis().setTickDensity(10);
+            // Move the grid lines in front of the contour layer
+            chart.getPlotArea().moveGridBefore(layer);
+
+            // Add a color axis (the legend) in which the top center is anchored at
+            // (245, 455). Set the length to 330 pixels and the labels on the top
+            // side.
+            int w = chart.getWidth();
+            int h = chart.getHeight();
+            ColorAxis cAxis = layer.setColorAxis(0, 0, Chart.TopLeft, h - w - 40,
+                Chart.Top);
+
+            // Add a bounding box to the color axis using the default line color as
+            // border.
+            cAxis.setBoundingBox(Chart.Transparent, Chart.LineColor);
+
+
+            // Set the color axis range as 0 to 20, with a step every 2 units
+            cAxis.setLinearScale(min, max, Math.Abs(max - min) / 100);
+
+            viewer.Image = chart.makeImage();
         }
 
-        private void anb_n_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
     }
 }
