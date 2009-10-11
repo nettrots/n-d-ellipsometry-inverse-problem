@@ -96,6 +96,7 @@
             this.delta_tb.Size = new System.Drawing.Size(100, 20);
             this.delta_tb.TabIndex = 2;
             this.delta_tb.Text = "160";
+            this.delta_tb.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // psi_tb
             // 
@@ -104,6 +105,7 @@
             this.psi_tb.Size = new System.Drawing.Size(100, 20);
             this.psi_tb.TabIndex = 3;
             this.psi_tb.Text = "17";
+            this.psi_tb.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // label1
             // 
@@ -184,6 +186,7 @@
             this.dstep_b.Size = new System.Drawing.Size(44, 20);
             this.dstep_b.TabIndex = 16;
             this.dstep_b.Text = "100";
+            this.dstep_b.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // nstep_b
             // 
@@ -192,6 +195,7 @@
             this.nstep_b.Size = new System.Drawing.Size(44, 20);
             this.nstep_b.TabIndex = 15;
             this.nstep_b.Text = "100";
+            this.nstep_b.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // nmin_b
             // 
@@ -200,6 +204,7 @@
             this.nmin_b.Size = new System.Drawing.Size(44, 20);
             this.nmin_b.TabIndex = 19;
             this.nmin_b.Text = "1.4";
+            this.nmin_b.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // nmax_b
             // 
@@ -208,6 +213,7 @@
             this.nmax_b.Size = new System.Drawing.Size(44, 20);
             this.nmax_b.TabIndex = 20;
             this.nmax_b.Text = "1.6";
+            this.nmax_b.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // dmin_b
             // 
@@ -216,6 +222,7 @@
             this.dmin_b.Size = new System.Drawing.Size(44, 20);
             this.dmin_b.TabIndex = 21;
             this.dmin_b.Text = "50";
+            this.dmin_b.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // dmax_b
             // 
@@ -224,6 +231,7 @@
             this.dmax_b.Size = new System.Drawing.Size(44, 20);
             this.dmax_b.TabIndex = 22;
             this.dmax_b.Text = "200";
+            this.dmax_b.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // label9
             // 
@@ -468,14 +476,17 @@
             this.aoi.Size = new System.Drawing.Size(44, 20);
             this.aoi.TabIndex = 51;
             this.aoi.Text = "60";
+            this.aoi.TextChanged += new System.EventHandler(this.onTextChanged);
             // 
             // ChartViewer
             // 
             this.ChartViewer.Location = new System.Drawing.Point(12, 12);
+            this.ChartViewer.MouseUsage = ChartDirector.WinChartMouseUsage.ZoomIn;
             this.ChartViewer.Name = "ChartViewer";
             this.ChartViewer.Size = new System.Drawing.Size(398, 354);
             this.ChartViewer.TabIndex = 53;
             this.ChartViewer.TabStop = false;
+            this.ChartViewer.Click += new System.EventHandler(this.ChartViewer_Click);
             // 
             // textBox1
             // 

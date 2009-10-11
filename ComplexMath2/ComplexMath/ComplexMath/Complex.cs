@@ -66,6 +66,45 @@ namespace ComplexMath
 
         /// <summary>
         /// <remarks>
+        /// Complex struct initializer uses real and imaginary input parameters of 
+        /// type String.
+        /// </remarks>
+        /// </summary>
+        /// <param name="real"></param>
+        /// <param name="imag"></param>
+        public Complex(string real, string imag)
+        {
+            this.m_real = Convert.ToDouble(real);
+            this.m_imag = Convert.ToDouble(imag);
+        }
+        /// <summary>
+        /// <remarks>
+        /// Complex struct initializer uses real and imaginary input parameters of 
+        /// type String and Double.
+        /// </remarks>
+        /// </summary>
+        /// <param name="real"></param>
+        /// <param name="imag"></param>
+        public Complex(string real, double imag)
+        {
+            this.m_real = Convert.ToDouble(real);
+            this.m_imag = imag;
+        }
+        /// <summary>
+        /// <remarks>
+        /// Complex struct initializer uses real and imaginary input parameters of 
+        /// type String and Double.
+        /// </remarks>
+        /// </summary>
+        /// <param name="real"></param>
+        /// <param name="imag"></param>
+        public Complex(double real, string imag)
+        {
+            this.m_real = real;
+            this.m_imag = Convert.ToDouble(imag);
+        }
+        /// <summary>
+        /// <remarks>
         /// Complex struct creates a new Complex struct from an existing one.
         /// </remarks>
         /// <example>

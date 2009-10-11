@@ -22,13 +22,14 @@ namespace InvertEllipsometryClass
         public double Psi
         {
             get { return psi; }
-            set { psi = value; }
+            set { psi = value;
+                rho = new Complex(); }
         }
 
         public double Delta
         {
             get { return delta; }
-            set { delta = value; }
+            set { delta = value; rho = new Complex(); }
         }
 
         public double IncidentAngle
@@ -45,7 +46,7 @@ namespace InvertEllipsometryClass
         {
             get
             {
-                if (rho == (null)) calcPho();
+                if (rho.GetHashCode() == (new Complex()).GetHashCode() ) calcPho();
                 return rho;
             }
 
