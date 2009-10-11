@@ -7,28 +7,28 @@ namespace InvertEllipsometryClass.Optimisation_Algorithms.SimpleSearch
 {
     public class SimpleSearchFMW : OptimisationAlgorythm_FMW
     {
+        #region fields
         private double nmin = 1.40;
 
-        private double nmax = 1.43;
+        private double nmax ;
 
-        private double dmin = 260;
+        private double dmin ;
 
-        private double dmax = 340;
+        private double dmax ;
 
-        private double dn = 0.0005;
+        private int dn ;
 
-        private double dd = 0.5;
+        private int dd ;
 
         private double percent = 100;
 
         private bool sortFlag;
+        #endregion
 
-
-        public SimpleSearchFMW(Functional f, double psi, double delta)
+        //Constuctor
+        public SimpleSearchFMW(Functional f)
         {
             func = f;
-            this.psi = psi;
-            this.delta = delta;
         }
 
         #region Comparer
@@ -74,13 +74,13 @@ namespace InvertEllipsometryClass.Optimisation_Algorithms.SimpleSearch
             set { dmax = value; }
         }
 
-        public double Dn
+        public int Dn
         {
             get { return dn; }
             set { dn = value; }
         }
 
-        public double Dd
+        public int Dd
         {
             get { return dd; }
             set { dd = value; }
@@ -104,9 +104,11 @@ namespace InvertEllipsometryClass.Optimisation_Algorithms.SimpleSearch
         public override OptimizeResult Optimize()
         {
             List<double[]> res = new List<double[]>();
-            for (double n = Nmin; n < Nmax; n += Dn)
-                for (double d = Dmin; d < Dmax; d += Dd)
-                    res.Add(new double[] { func.functional(n, d, ref psi, ref delta), n, d, delta, psi });
+            double deln = (Nmax - Nmin)/dn;
+            double deld = (Dmax-Dmin) / dd;
+            for (double n = Nmin; n <= Nmax; n += deln)
+                for (double d = Dmin; d <= Dmax; d += deld)
+                    res.Add(new double[] { n, d, func.functional(n, d, ref psi, ref delta), delta, psi });
             if(sortFlag)
             {
                 res.Sort(new ArrComparer());

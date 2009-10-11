@@ -43,6 +43,36 @@
             <param name="real"></param>
             <param name="imag"></param>
         </member>
+        <member name="M:ComplexMath.Complex.#ctor(System.String,System.String)">
+            <summary>
+            <remarks>
+            Complex struct initializer uses real and imaginary input parameters of 
+            type String.
+            </remarks>
+            </summary>
+            <param name="real"></param>
+            <param name="imag"></param>
+        </member>
+        <member name="M:ComplexMath.Complex.#ctor(System.String,System.Double)">
+            <summary>
+            <remarks>
+            Complex struct initializer uses real and imaginary input parameters of 
+            type String and Double.
+            </remarks>
+            </summary>
+            <param name="real"></param>
+            <param name="imag"></param>
+        </member>
+        <member name="M:ComplexMath.Complex.#ctor(System.Double,System.String)">
+            <summary>
+            <remarks>
+            Complex struct initializer uses real and imaginary input parameters of 
+            type String and Double.
+            </remarks>
+            </summary>
+            <param name="real"></param>
+            <param name="imag"></param>
+        </member>
         <member name="M:ComplexMath.Complex.#ctor(ComplexMath.Complex)">
             <summary>
             <remarks>
