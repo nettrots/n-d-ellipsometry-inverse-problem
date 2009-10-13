@@ -30,6 +30,7 @@ namespace InvertElli
             netChart=new NetChart(ChartViewer);
             firtsInit();
             netChart.Init();
+
         }
         private void firtsInit()
         {
@@ -84,8 +85,7 @@ namespace InvertElli
         private void runSimpleSearch()
         {
             OptimizeResult rez=algorythm.Optimize();
-            netChart.ChangeData((List<double[]>)rez.Pack);
-            netChart.ChangeState();
+            netChart.ChangeState(rez.Pack);
             netChart.Draw();
             
         }
@@ -96,9 +96,60 @@ namespace InvertElli
             fieldsList[fieldsList.indexOfInterface(sender)].syncFrom();
         }
 
+        private bool st=false;
+            ZoomNetChart znc;
+
         private void ChartViewer_Click(object sender, EventArgs e)
         {
+            MouseEventArgs marg = e as MouseEventArgs;
+
+
+            if (!st)
+            {
+                znc = new ZoomNetChart(ChartViewer,netChart);
+                znc.ChangeState(ZoomNetChart.ClickState.FIRST_POINT, marg.Location);
+                st = !st;
+            }
+            if(marg.Button==System.Windows.Forms.MouseButtons.Right)
+            {
+                znc.ChangeState(ZoomNetChart.ClickState.CLEAR_POINTS);
+                st = !st;
+            }
+            znc.Draw();
+            //MessageBox.Show(netChart.getXYcoord(marg.X , marg.Y).ToString());
+        }
+
+        private void ChartViewer_DoubleClick(object sender, EventArgs e)
+        {
+            MouseEventArgs marg = e as MouseEventArgs;
+
+            if (st)
+            {
+                znc.ChangeState(ZoomNetChart.ClickState.LAST_POINT, marg.Location);
+                st = !st;
+                znc.Draw();
+
+            }
+
+       }
+
+        private void ChartViewer_MouseHover(object sender, EventArgs e)
+        {
             
+
+        }
+
+        private void ChartViewer_MouseMove(object sender, MouseEventArgs e)
+        {
+            MouseEventArgs marg = e as MouseEventArgs;
+            if (st)
+            {
+                
+                ChartViewer.Image=ChartViewer.Chart.makeImage();
+                znc.ChangeState(ZoomNetChart.ClickState.LAST_POINT, marg.Location);
+                znc.Draw();
+
+            }
         }
 
 
