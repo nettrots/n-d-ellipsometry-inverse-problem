@@ -8,7 +8,7 @@ namespace Graphics
     public abstract class AbstractCharting
     {
         public abstract void Init();
-        public abstract void ChangeState();
+        public abstract void ChangeState(params object[] args);
         public abstract void Draw();
     }
 }
