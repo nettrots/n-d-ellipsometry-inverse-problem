@@ -481,14 +481,13 @@
             // ChartViewer
             // 
             this.ChartViewer.Location = new System.Drawing.Point(12, 12);
+            this.ChartViewer.MouseUsage = ChartDirector.WinChartMouseUsage.ZoomIn;
             this.ChartViewer.Name = "ChartViewer";
             this.ChartViewer.Size = new System.Drawing.Size(398, 354);
             this.ChartViewer.TabIndex = 53;
             this.ChartViewer.TabStop = false;
-            this.ChartViewer.DoubleClick += new System.EventHandler(this.ChartViewer_DoubleClick);
-            this.ChartViewer.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ChartViewer_MouseMove);
-            this.ChartViewer.MouseHover += new System.EventHandler(this.ChartViewer_MouseHover);
-            this.ChartViewer.Click += new System.EventHandler(this.ChartViewer_Click);
+            this.ChartViewer.ZoomDirection = ChartDirector.WinChartDirection.HorizontalVertical;
+            this.ChartViewer.ViewPortChanged += new ChartDirector.WinViewPortEventHandler(this.ChartViewer_ViewPortChanged);
             // 
             // textBox1
             // 
