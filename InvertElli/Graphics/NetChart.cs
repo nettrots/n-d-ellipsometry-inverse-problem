@@ -58,7 +58,7 @@ namespace Graphics
             }
         }
 
-        private int marginX=30;
+        private int marginX=50;
         private int marginY = 30;
         private int marginXright = 4 * 30;
         private int marginYbottom = 2 * 30;
@@ -122,8 +122,10 @@ namespace Graphics
 //            cAxis.setLinearScale(min, max, Math.Abs(max - min) / 10);
 //            cAxis.setColorGradient();
 
+            chart.layout();
+            chart.layoutAxes();
             viewer.Chart = chart;
-            viewer.Image= chart.makeImage();
+           
         }
     }
 }
