@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldsConnector", "FieldsCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics", "Graphics\Graphics.csproj", "{A7F13E8B-4D80-4938-BAD8-408DB1D797DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EllipsometryPresentation", "EllipsometryPresentation\EllipsometryPresentation.csproj", "{938BA293-54F7-413E-BAA6-DFB70BB4D786}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{A7F13E8B-4D80-4938-BAD8-408DB1D797DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F13E8B-4D80-4938-BAD8-408DB1D797DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F13E8B-4D80-4938-BAD8-408DB1D797DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938BA293-54F7-413E-BAA6-DFB70BB4D786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938BA293-54F7-413E-BAA6-DFB70BB4D786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938BA293-54F7-413E-BAA6-DFB70BB4D786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938BA293-54F7-413E-BAA6-DFB70BB4D786}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

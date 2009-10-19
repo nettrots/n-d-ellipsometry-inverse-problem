@@ -1,0 +1,24 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ac="clr-namespace:AdditionalControl" 
+    xmlns:my="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration" x:Class="EllipsometryPresentation.Controls.MinimisationControl" 
+    Height="467" Width="545" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+    
+    <Grid Width="761" Height="853">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+    	<StackPanel RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="VerticalAlignment" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Grid.Column="0" Grid.Row="0" >
+    		<DockPanel HorizontalAlignment="Stretch" Width="450" Height="400" LastChildFill="False">
+    			<my:WindowsFormsHost x:Name="windowsFormsHost" Width="400" Height="400" DockPanel.Dock="Right"/>
+    			<ac:RangeSlider Width="50" Height="400" DockPanel.Dock="Left" Orientation="Vertical"/>
+                
+    		</DockPanel>
+    		<ac:RangeSlider Width="450" Height="50" Orientation="Horizontal"/>
+    		
+    	</StackPanel>
+    </Grid>
+    
+</UserControl>
