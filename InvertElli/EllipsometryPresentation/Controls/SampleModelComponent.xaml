@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="EllipsometryPresentation.Controls.SampleModelComponent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit"
+    Height="299.97" Width="300">
+    <Grid  Name="grid1" Height="100">
+       <my:DataGrid AutoGenerateColumns="False"  Name="dataGrid1"  />
+    </Grid>
+</UserControl>
