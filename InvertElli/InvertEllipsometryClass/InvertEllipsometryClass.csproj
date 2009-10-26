@@ -62,7 +62,6 @@
     <Compile Include="Optimisation_Algorithms\LevenbergMarquardtAlg\trinverse.cs" />
     <Compile Include="Material.cs" />
     <Compile Include="Algebra\Matrix.cs" />
-    <Compile Include="Method.cs" />
     <Compile Include="Optimisation_Algorithms\OptimisationAlgorythm_FMW.cs" />
     <Compile Include="Optimisation_Algorithms\PrincipalAxis\PrinccipalAxisFMW.cs" />
     <Compile Include="Optimisation_Algorithms\PrincipalAxis\principalaxis.cs" />

@@ -20,7 +20,7 @@
                             <Thumb x:Name="Thumb">
                                 <Thumb.Template>
                                     <ControlTemplate >
-                                        <Rectangle Fill="Red" 
+                                        <Rectangle Fill="Gray" 
                                                    Stroke="Black"
                                                    StrokeThickness="1" 
                                                    Width="10"
