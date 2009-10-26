@@ -4,15 +4,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ChartDirector;
+using UserControl=System.Windows.Controls.UserControl;
 
 namespace EllipsometryPresentation.Controls
 {
@@ -28,11 +29,10 @@ namespace EllipsometryPresentation.Controls
             // add it to the WindowsFormsHost
             
             InitializeComponent();
-            viewer = new WinChartViewer();
+            viewer = new WinChartViewer {Dock = DockStyle.Fill};
+            //viewer.Height = windowsFormsHost.Height;
             windowsFormsHost.Child = viewer;
-            viewer.BackgroundImage =
-                Bitmap.FromFile("C:/Documents and Settings/Admin/Мои документы/Мои рисунки/Ux1.bmp");
-
+          
         }
     }
 }
